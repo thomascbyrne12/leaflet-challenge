@@ -141,10 +141,7 @@ function create_map(earthquakes) {
 
     // // Create overlay object to hold our overlay layer
     var overlay_maps = {
-        // "Past Hour": earthquakes,
-        // "Past 24 Hours": earthquakes,
         "Earthquakes": earthquakes
-        // "Past 30 Days": earthquakes,
     };
 
     // Create our map, giving it the streetmap and earthquake layers to display on load
