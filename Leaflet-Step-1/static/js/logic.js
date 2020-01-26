@@ -78,7 +78,7 @@ function create_features(earthquake_data) {
         pointToLayer: function(feature, latitude_longitude) {
             return L.circleMarker(latitude_longitude);
         },
-        onEachFeature: onEachFeature,
+        eachFeature: eachFeature,
         style: function (feature) {
             return {
                 "weight": 1,
