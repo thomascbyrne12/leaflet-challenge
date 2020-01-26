@@ -97,6 +97,10 @@ function create_features(earthquake_data) {
 }
 
 function create_map(earthquakes) {
+
+    // API KEY
+    const API_KEY = 'pk.eyJ1IjoidGhvbWFzY2J5cm5lMTIiLCJhIjoiY2s1aGVqcjBiMDMwMDNqbXI2aWd4Y3NtZyJ9.OlC_qqfMJypnSpTz7KURPQ';
+
     // Define streetmap, satellite , darkmap, and lightmap layers
     var street_map = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
         attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
